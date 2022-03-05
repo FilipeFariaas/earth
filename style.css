@@ -79,7 +79,9 @@ a {
 
 	padding-inline: 20%;
 
-	clip-path: polygon(0 20%, 100% 0, 100% 79%, 0% 100%);
+	text-align: justify;
+
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .info__wrapper {
@@ -118,4 +120,24 @@ a {
 	text-decoration: none;
 	color: var(--blue);
 	padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+	.about h1 {
+		padding: 20px;
+	}
+	.info {
+		flex-direction: column-reverse !important;
+		gap: 0;
+
+		padding-block: 100px;
+	}
+
+	.info img {
+		width: 150px;
+	}
+
+	.info__wrapper {
+		padding-block: 0px;
+	}
 }
